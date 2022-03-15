@@ -14,7 +14,7 @@
         <div class="logo">
             <img src="https://i.imgur.com/iheOsmy.png" alt="logo" class="img-logo"/>
             <div class="text-logo">
-                <h2 class="blog-title">Wild food</h2>
+                <h1 class="blog-title">Wild food</h2>
            
 </div>
         </div>
