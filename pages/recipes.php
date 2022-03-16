@@ -3,11 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD:recipes.php
     <link rel="stylesheet" href="recipes.css">
     <title>Recettes</title>
+=======
+    <title>Recipes</title>
+>>>>>>> _dev:pages/recipes.php
 </head>
 <header></header>
 <body>
+<<<<<<< HEAD:recipes.php
     <main>
 
         <section class="recipe_image_container">
@@ -56,5 +61,16 @@
             </div>
         </section>
     </main>
+=======
+<?php
+        include '/home/marine/Documents/wild-food/layouts/_header.php';
+    ?>
+
+    <h1>Recipes</h1>
+
+
+
+    
+>>>>>>> _dev:pages/recipes.php
 </body>
 </html>
