@@ -2,7 +2,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/nav.css">
+    <link rel="stylesheet" href="../assets/nav.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
     </style> 
