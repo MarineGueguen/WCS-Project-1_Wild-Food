@@ -5,9 +5,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link href="Styles/welcome.css" rel="stylesheet" />
+  <link href="../assets/welcome.css" rel="stylesheet" />
 </head>
 <body>
+<?php
+  include "../layouts/_header.php";
+  ?>
   <section>
     <article class="borderRadius aperitifs"><a href="#"><h2>Apéritifs</h2></a></article>
 
@@ -21,7 +24,7 @@
 
 
   <?php
-  include "Layouts/footer.php";
+  include "../layouts/_footer.php";
   ?>
 </body>
 </html>
