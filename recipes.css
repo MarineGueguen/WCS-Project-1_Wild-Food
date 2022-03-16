@@ -1,0 +1,140 @@
+:root {
+    --main-padding : 0.5rem;
+    --main-margin : 1rem;
+}
+
+* {
+    box-sizing: border-box;
+    margin : 0;
+
+
+}
+
+/* header */
+
+header {
+    height : 3rem;
+    background-color: blue;
+}
+
+
+/* main */ 
+main{
+    background-color: rgb(226, 225, 225);
+    border-radius: 10px;
+}
+
+/*image*/
+
+
+.recipe_image_box{
+    padding-top: 1rem;;
+    display: flex;
+
+}
+
+.recipe_image_box img { 
+    max-width: 90%;
+    max-height: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+/* Title of the recipe*/
+
+.recipe_title h1{
+    text-align: center;
+}
+
+.recipe_title{
+    margin : var(--main-margin);
+}
+
+/* Ingredients ofthe recipe*/
+
+.recipe_ingredients p{
+    padding-bottom : var(--main-padding);
+    font-weight: bold;
+    padding : var(--main-padding);
+    padding-top: 0;
+}
+
+.recipe_ingredients {
+    margin : var(--main-margin);
+    padding : var(--main-padding);
+    padding-left: 0;
+    height : auto;
+    border : white solid 2px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow :2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Steps of the recipe*/
+
+.recipe_steps{
+    border-radius: 10px;
+    margin-left: var(--main-margin);
+    margin-right: var(--main-margin);
+    box-shadow :2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    background-color: white;
+}
+
+.recipe_steps div {
+    display: flex;
+    padding : var(--main-padding);
+    height : auto;
+    flex-direction: column;
+
+ 
+
+}
+.recipe_steps div p:first-child{
+    padding-bottom : var(--main-padding);
+    font-weight: bold;
+}
+
+/* Version desktop*/
+
+@media screen and (min-width: 390px) {
+    main{
+        max-width : 40rem;
+        margin: auto;
+        border-radius: 10px;
+    }
+
+    /*image*/
+
+    .recipe_image_container {
+        height: 23rem;
+  
+    }
+
+    .recipe_image_box{
+        display : flex;
+        align-items: center;
+        margin-top: 0;
+        margin-bottom: 0;
+        height: 23rem;
+        padding-top: 0;
+        
+    }
+
+    .recipe_image_box img { 
+        min-width: 70%;
+        min-height: 90%;
+        border-radius: 10px;
+        vertical-align: middle;
+
+    }
+    
+    .recipe_title h1{
+        text-align: center;
+    }
+    
+    .recipe_title{
+        margin : var(--main-margin);
+        margin-top: 0;
+    }
+}
