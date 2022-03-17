@@ -8,6 +8,9 @@
   <link rel="stylesheet" href="../assets/footer.css"/>
 </head>
 <footer>
-    <h2>Foooooter</h2>
+  <div class="contact">
+    <p>Wild Food 2022 ©</p>
+    <a href="#">Nous contacter</a>
+  </div>
 </footer>
 </html>

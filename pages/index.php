@@ -12,13 +12,30 @@
   include "../layouts/_header.php";
   ?>
   <section>
-    <article class="borderRadius aperitifs"><a href="#"><h2>Apéritifs</h2></a></article>
-
-    <article class="borderRadius entrees"><a href="#"><h2>Entrées</h2></a></article>
-
-    <article class="borderRadius plats"><a href="#"><h2>Plats</h2></a></article>
-
-    <article class="borderRadius desserts"><a href="#"><h2>Desserts</h2></a></article>
+    <article>
+      <a href="#" >
+        <img class="homePageImage" src="https://placeimg.com/640/480/nature"/>
+        <h2 class="homePageTitle">Apéritifs</h2>
+      </a>
+    </article>
+    <article>
+      <a href="#">
+        <img class="homePageImage" src="https://placeimg.com/640/480/architecture"/>
+        <h2 class="homePageTitle">Entrées</h2>
+      </a>
+    </article>
+    <article>
+      <a href="#">
+        <img class="homePageImage" src="https://placeimg.com/640/480/any"/>
+        <h2 class="homePageTitle">Plats</h2>
+      </a>
+    </article>
+    <article>
+      <a href="#">
+        <img class="homePageImage" src="https://placeimg.com/640/480/tech"/>
+        <h2 class="homePageTitle">Desserts</h2>
+      </a>
+    </article>
   </section>
 
 
