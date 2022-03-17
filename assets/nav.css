@@ -5,16 +5,16 @@
 header {
     color: #868B8E;
     font-size: 1.2em;
-    line-height: 1.6;
     overflow-x: hidden;
-}
+    }
 
 label .menu {
     position: absolute;
+    z-index: 100;
     left: 0px;
     top: 0px;
-    width: 4.75rem;
-    height: 4.75rem;
+    width: 3.5rem;
+    height: 3.5rem;
     background: #EEEDE7;
     transition: .5s ease-in-out;
     cursor: pointer; 
@@ -22,8 +22,8 @@ label .menu {
 
 label .hamburger {
     position: absolute;
-    top: 35px;
-    right: 30px;
+    top: 25px;
+    left: 30px;
     width: 30px;
     height: 3px;
     background: #868B8E;
@@ -68,18 +68,19 @@ label input:checked + .menu .hamburger:before {
     top: 0;
 }
 
-label input:checked + .menu + ul { 
+label input:checked + .menu + ul{ 
     opacity: 1; 
+    left: 0;
 }
-  
+
+
 label ul {
     z-index: 200;
-    position: absolute;
-    top: 4.75rem;
-    left: 0;
     opacity: 0;
+    position: absolute;
+    top: 3.5rem;
+    left: -15rem;
     transition: .5s .0s ease-in-out;
-    display: block;
     width: auto;
     height: auto;
     padding: 1rem 3rem 1rem 3rem;
@@ -92,10 +93,10 @@ label ul li{
 }
 
 label a {
-  margin-bottom: 0.5em;
-  display: block;
-  color: #868B8E;
-  text-decoration: none;
+    margin-bottom: 0.5em;
+    display: block;
+    color: #868B8E;
+    text-decoration: none;
 }
 
 .nav-bar {
@@ -104,12 +105,12 @@ label a {
     justify-content: center;
     background-color: #EEEDE7;
     padding: 0.8rem;
-    height: 4.75rem;
+    height: 3.5rem;
 }
 
 .blog-title {
     font-family: 'Lobster', cursive;
-    font-size: 3rem;
+    font-size: 2rem;
     margin: auto;
 }
 
@@ -120,7 +121,7 @@ label a {
 }
 
 .img-logo {
-height: 4rem;
+height: 3rem;
 }
 
 @media screen and (min-width: 820px) {
@@ -160,7 +161,7 @@ height: 4rem;
         align-items: center;
         justify-content: space-between;
         background-color: #EEEDE7;
-        height: 4.7rem;
+        height: 3.5rem;
     }
 
     .logo {
