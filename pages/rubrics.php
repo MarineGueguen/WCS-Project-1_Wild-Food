@@ -8,7 +8,7 @@
 </head>
 <body>
 <?php
-        include '/home/marine/Documents/wild-food/layouts/_header.php';
+        include '../layouts/_header.php';
     ?>
 
     <h1>Rubrics</h1>

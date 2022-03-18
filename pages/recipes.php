@@ -7,20 +7,33 @@
     <title>Recettes</title>
 </head>
 <body>
- 
+<?php
+        include '../layouts/_header.php';
+    ?>
+
     <main>
+
 
         <section class="recipe_image_container">
             <div class="recipe_image_box">
-                <img src="https://picsum.photos/200" alt="gateau_au_chocolat"/>
+                <img src="../assets/images/pexels-photo-264892.jpeg" alt="gateau_au_chocolat"/>
             </div>   
         </section>
         <section class="recipe_title">
             <h1>Gateau au chocolat</h1>
         </section>
+        <section>
+            <div class="recipe_infos">  
+            <ul class="info_list">
+                <li>Temps total</li>
+                <li>Cuisson</li>
+                <li>Budget</li>
+            </ul>
+            </div>
+        </section>
         <section class="recipe_ingredients">
             <p>Ingrédients : </p>
-            <ul>
+            <ul class="ingredients_list">
                 <li>100g de beurre</li>
                 <li>200g d sucre</li>
                 <li>100g de chocolat</li>
