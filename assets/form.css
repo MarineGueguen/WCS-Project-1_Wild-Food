@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.page-title {
+    text-align: center;
+    padding: 2rem;
+}
+
+form {
+    margin: auto;
+    width: 50%;
+    background-color: bisque;
+    padding: 3rem;
+}
+
+label {
+    display: block;
+    padding: 0.5rem;
+}
+
+input, textarea, select {
+    width: 100%;
+    border-radius: 5px;
+    max-width: 100%;
+}
+
+input {
+    height: 2rem;
+}
+
+input:value {
+    opacity: 0.5;
+}
+
+textarea {
+    height: 8rem;
+}
+
+.recipe-button {
+    text-align: center;
+    padding: 0.5rem;
+}
