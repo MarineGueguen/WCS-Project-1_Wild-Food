@@ -1,43 +1,73 @@
-@charset "utf-8";
-
-body { 
-    margin: 0px; 
-    padding: 0px;
-    color: # 000; 
-    background: #fff; 
+:root {
+  --main-color: pink;
+  --second-color: lightgray;
+  --third-color: lightblue;
+  --text-color-light: lightgray;
+  --text-color-dark: darkgray;
+  --font-title: "Roboto", sans-serif;
+  --font-text: "Roboto", sans-serif;
+  --font-size-title: 2rem;
+  --font-size-text-normal: 1rem;
+  --font-size-text-small: 0.5rem;
+  --small-space: 0.5rem;
+  --big-space: 1.5rem;
 }
 
-html, body, p, th, td, li, jj, dt {
-    font: 1em Arial, Helvetica, sans-serif; 
+# {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-h1, h2, h3 { 
-    font-family: Arial, Helvetica, sans-serif;
+body {
+  margin: 0px;
+  padding: 0px;
+  color: #000;
+  background: #fff;
+}
+
+html,
+body,
+p,
+th,
+td,
+li,
+jj,
+dt {
+  font: 1em Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 h1 {
-    font-size: 2em;
+  font-size: 2em;
 }
 
 h2 {
-    font-size: 1.5em;
+  font-size: 1.5em;
 }
 
 h3 {
-    font-size: 1.2em;
+  font-size: 1.2em;
 }
 
 h4 {
-    font-size: 1em;
+  font-size: 1em;
 }
 a:link {
-    color: # 00f; 
+  color: #00f;
 }
 
 a:visited {
-    color:# 009;
+  color: #009;
 }
 a:hover {
-    color: # 06f;
-} 
-a: actif {color: # 0cf; }
+  color: #06f;
+}
+a: actif {
+  color: #0cf;
+}
