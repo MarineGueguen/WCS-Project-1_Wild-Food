@@ -12,8 +12,8 @@
     <p>Wild Food 2022 ©</p>
     <a href="#">Nous contacter</a>
   </div>
-  <div class="social">
+  <!-- <div class="social">
     <img class="fbLogo" src="https://www.lebatistou.fr/wp-content/uploads/2016/06/facebook-icon-logo-vector-400x400.png" alt="">
-  </div>
+  </div> -->
 </footer>
 </html>

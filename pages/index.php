@@ -15,34 +15,35 @@
 <?php
   include "../layouts/_header.php";
   ?>
-  <section>
-    <article>
-      <a href="#" >
-        <img class="homePageImage" src="https://placeimg.com/640/480/nature"/>
-        <h2 class="homePageTitle">Apéritifs</h2>
-        <p class="aperitifSubtitle">Le meilleur des apéritifs à partager entre amis. Verrines, toasts, amuse-gueules ou petits feuilletées, surprenez vos convives !</p>
-      </a>
-    </article>
-    <article>
-      <a href="#">
-        <img class="homePageImage" src="https://placeimg.com/640/480/architecture"/>
-        <h2 class="homePageTitle">Entrées</h2>
-      </a>
-    </article>
-    <article>
-      <a href="#">
-        <img class="homePageImage" src="https://placeimg.com/640/480/any"/>
-        <h2 class="homePageTitle">Plats</h2>
-      </a>
-    </article>
-    <article>
-      <a href="#">
-        <img class="homePageImage" src="https://placeimg.com/640/480/tech"/>
-        <h2 class="homePageTitle">Desserts</h2>
-      </a>
-    </article>
-  </section>
-
+  <div class="sectionContainer">
+    <section class="frontPageGrid">
+      <article>
+        <a href="#" >
+          <img class="homePageImage" src="https://placeimg.com/640/480/nature"/>
+          <h2 class="homePageTitle">Apéritifs</h2>
+          <p class="aperitifSubtitle">Le meilleur des apéritifs à partager entre amis. Verrines, toasts, amuse-gueules ou petits feuilletées, surprenez vos convives !</p>
+        </a>
+      </article>
+      <article>
+        <a href="#">
+          <img class="homePageImage" src="https://placeimg.com/640/480/architecture"/>
+          <h2 class="homePageTitle">Entrées</h2>
+        </a>
+      </article>
+      <article>
+        <a href="#">
+          <img class="homePageImage" src="https://placeimg.com/640/480/any"/>
+          <h2 class="homePageTitle">Plats</h2>
+        </a>
+      </article>
+      <article>
+        <a href="#">
+          <img class="homePageImage" src="https://placeimg.com/640/480/tech"/>
+          <h2 class="homePageTitle">Desserts</h2>
+        </a>
+      </article>
+    </section>
+  </div>
 
 
   <?php
