@@ -31,10 +31,6 @@ input {
     height: 2rem;
 }
 
-input:value {
-    opacity: 0.5;
-}
-
 textarea {
     height: 8rem;
 }
@@ -42,4 +38,15 @@ textarea {
 .recipe-button {
     text-align: center;
     padding: 0.5rem;
+}
+
+.add-step {
+    display: block;
+    text-align: center;
+    padding: 0.5rem;
+    margin: auto;
+}
+
+.recipe-step2, .recipe-step3, .recipe-step4, .recipe-step5 {
+    display: none;
 }
