@@ -1,5 +1,5 @@
 .borderRadius {
-  border-radius: 15px;
+  border-radius: 20rem;
 }
 
 .sectionContainer {
@@ -28,6 +28,8 @@ article {
 
 article a:link {
   text-decoration: none;
+  height: 100%;
+  width: 100%;
 }
 
 .homePageImage {
@@ -35,7 +37,7 @@ article a:link {
   height: 100%;
   border-radius: 15px;
   object-fit: cover;
-  transition: filter 0.4s;
+  transition: filter 0.6s;
 }
 
 .homePageTitle {
@@ -43,9 +45,9 @@ article a:link {
   color: var(--text-color-light);
   background-color: rgba(0, 0, 0, 0.425);
   height: 24%;
-  width: 80%;
+  width: 96%;
   top: calc(50% - 12%);
-  left: calc(50% - 40%);
+  left: calc(50% - 48%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -53,8 +55,11 @@ article a:link {
   font-size: var(--font-size-title);
 }
 
-.aperitifSubtitle {
-  visibility: hidden;
+.homePageTitleSubtitle {
+  opacity: 0;
+  transition: opacity 2s;
+  height: 0;
+  transition: height 0.4s;
 }
 
 @media screen and (min-width: 400px) {
@@ -69,14 +74,20 @@ article a:link {
   }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 915px) and (pointer: fine) {
   .homePageTitle {
-    visibility: hidden;
+    opacity: 0;
+    transition: opacity 5s;
     background-color: rgba(0, 0, 0, 0);
+    justify-content: flex-start;
+    left: 15%;
+    height: 0;
+    transition: height 0.8s;
   }
 
   article:hover .homePageTitle {
-    visibility: visible;
+    opacity: 10;
+    height: 24%;
   }
 
   article:hover {
@@ -88,17 +99,18 @@ article a:link {
     filter: brightness(50%);
   }
 
-  article:hover .aperitifSubtitle {
-    visibility: visible;
+  article:hover .homePageTitleSubtitle {
+    opacity: 1;
     position: absolute;
     height: 4rem;
-    width: 8rem;
+    width: 50%;
     top: calc(50% - 2rem);
-    left: calc(50% - 6rem);
+    left: 45%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     font-family: var(--font-title);
     font-size: var(--font-size-text-normal);
+    color: var(--text-color-light);
   }
 }
