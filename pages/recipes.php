@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/recipes.css">
+    <link rel="stylesheet" href="/assets/main.css">
     <title>Recettes</title>
 </head>
 <body>
@@ -70,5 +71,9 @@
             </div>
         </section>
     </main>
+
+<?php
+    include '../layouts/_footer.php';
+?>
 </body>
 </html>

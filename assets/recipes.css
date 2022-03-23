@@ -11,8 +11,9 @@
 
 /* main */ 
 main{
-    background-color: rgb(240, 239, 239);
-    border-radius: 10px;
+    border-left: solid 1px var(--second-color); 
+    border-right: solid 1px var(--second-color);
+    padding-bottom: 1rem;
 }
 
 /*image*/
@@ -113,7 +114,6 @@ main{
     main{
         max-width : 40rem;
         margin: auto;
-        border-radius: 10px;
     }
 
     /*image*/

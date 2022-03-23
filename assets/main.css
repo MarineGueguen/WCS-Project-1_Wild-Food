@@ -1,17 +1,19 @@
 :root {
-  --main-color: pink;
-  --second-color: lightgray;
+  --main-color: #fffbf5;
+  --second-color: #ad9b80;
   --third-color: lightblue;
-  --text-color-light: lightgray;
+  --text-color-light: #fffbf5;
   --text-color-dark: rgb(39, 39, 39);
-  --font-title: "Roboto", sans-serif;
+  --font-title: "Roboto Slab", serif;
+  --weight-title: 900;
   --font-text: "Roboto", sans-serif;
   --font-size-title: 2rem;
   --font-size-text-normal: 1rem;
   --font-size-text-small: 0.5rem;
   --small-space: 0.5rem;
   --big-space: 1.5rem;
-  --nav-height: 3.5rem;
+  --nav-height-small: 45px;
+  --nav-height-big: 54px;
   --footer-height: 3.5rem;
 }
 
@@ -19,4 +21,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  background-color: #fffbf5;
 }

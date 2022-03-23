@@ -10,7 +10,7 @@ body {
   font-size: 100%;
   font-size: 16px;
   line-height: 1.5;
-  background-color: #f0f4fb;
+  background-color: var(--main-color);
 }
 
 .site-container {

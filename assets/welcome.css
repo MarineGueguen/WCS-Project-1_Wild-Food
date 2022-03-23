@@ -3,7 +3,7 @@
 }
 
 .sectionContainer {
-  background-color: var(--second-color);
+  background-color: var(--main-color);
   height: calc(100vh - var(--nav-height));
   padding: var(--small-space);
   display: flex;
@@ -43,6 +43,7 @@ article a:link {
 .homePageTitle {
   position: absolute;
   color: var(--text-color-light);
+  font-weight: var(--weight-title);
   background-color: rgba(0, 0, 0, 0.425);
   height: 24%;
   width: 96%;
