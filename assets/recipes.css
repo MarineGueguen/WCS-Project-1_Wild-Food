@@ -39,17 +39,21 @@ main{
 
 .recipe_title h1{
     text-align: center;
+    font-size: var(--font-size-title);
+    font-family: var(--font-title);
 }
 
 /* Info of the recipe*/
 
 .recipe_infos {
     margin : var(--main-margin);
+    margin-top : 18px;
     padding : var(--main-padding);
     height : auto;
     border-radius: 10px;
-    background-color: white;
-    box-shadow :2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    background-color: var(--main-color);
+    box-shadow :2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    font-family: var(--font-text);
 }
 
 .info_list {
@@ -65,22 +69,25 @@ main{
     font-weight: bold;
     padding : var(--main-padding);
     padding-top: 0;
+    font-family: var(--font-text);
 }
 
 .recipe_ingredients {
     margin : var(--main-margin);
     padding : var(--main-padding);
     height : auto;
-    border : white solid 2px;
+    border : var(--main-color) solid 2px;
     border-radius: 10px;
-    background-color: white;
-    box-shadow :2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    background-color:var(--main-color);
     display: flex;
     flex-direction: column;
+    font-family: var(--font-text);
+
 }
 
 .ingredients_list{
     padding-left: 10%;
+    column-count: 2;
 }
 
 
@@ -90,8 +97,8 @@ main{
     border-radius: 10px;
     margin-left: var(--main-margin);
     margin-right: var(--main-margin);
-    box-shadow :2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-    background-color: white;
+    background-color: var(--main-color);
+    font-family: var(--font-text);
 }
 
 .recipe_steps div {
