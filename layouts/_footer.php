@@ -8,12 +8,19 @@
   <link rel="stylesheet" href="../assets/footer.css"/>
 </head>
 <footer>
-  <div class="contact">
+  <div>
     <p>Wild Food 2022 ©</p>
-    <a href="#">Nous contacter</a>
   </div>
-  <!-- <div class="social">
-    <img class="fbLogo" src="https://www.lebatistou.fr/wp-content/uploads/2016/06/facebook-icon-logo-vector-400x400.png" alt="">
-  </div> -->
+  <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="" data-layout="button" data-action="like" data-size="small" data-share="false"></div>
+  <a href="#" class="contact">Nous contacter</a>
+  <form class="newsletter-inscription" action="#" metod="post">
+    <label for="email">Recevoir notre newsletter :</label>
+    <div>
+    <input type="email" name="email">
+    <button>Envoyer</button>
+    </div>
+  </form>
 </footer>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v13.0" nonce="67qGljTl"></script>
 </html>

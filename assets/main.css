@@ -3,7 +3,7 @@
   --second-color: #ad9b80;
   --third-color: lightblue;
   --text-color-light: #fffbf5;
-  --text-color-dark: rgb(39, 39, 39);
+  --text-color-dark: #362f24;
   --font-title: "Roboto Slab", serif;
   --weight-title: 900;
   --font-text: "Roboto", sans-serif;
@@ -14,7 +14,8 @@
   --big-space: 1.5rem;
   --nav-height-small: 45px;
   --nav-height-big: 54px;
-  --footer-height: 3.5rem;
+  --footer-height-small: 95px;
+  --footer-height-big: 65px;
 }
 
 * {

@@ -1,21 +1,55 @@
 footer {
-  background-color: aquamarine;
-  height: var(--footer-height);
-  padding: 0.5rem;
+  background-color: var(--second-color);
+  height: var(--footer-height-small);
+  padding: 10px 10px 5px 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 20px);
+  font-family: var(--font-text);
+  color: var(--text-color-light);
+  align-items: center;
+}
+
+.fb-like {
+  justify-self: end;
+  margin-top: 10px;
 }
 
 .contact {
-  display: flex;
-  justify-content: space-between;
+  grid-row: 2 / 3;
+  color: var(--text-color-dark);
 }
 
-.social {
-  margin: 0.5rem 0 0 0;
+.newsletter-inscription {
   display: flex;
-  justify-content: flex-end;
+  flex-direction: column;
+  grid-column: 1 / -1;
+  grid-row: 3 / 5;
 }
 
-.fbLogo {
-  width: 2rem;
-  height: 2rem;
+.newsletter-inscription input {
+  width: 50%;
+}
+
+@media screen and (min-width: 915px) {
+  footer {
+    height: var(--footer-height-big);
+    grid-template-rows: repeat(2, 20px);
+    gap: 5px;
+  }
+  .contact {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    justify-self: end;
+  }
+  .contact:hover {
+    cursor: pointer;
+    color: var(--text-color-light);
+  }
+  .newsletter-inscription {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    flex-direction: row;
+    gap: 5px;
+  }
 }
