@@ -16,90 +16,90 @@
 
 <div class="site-container">
     <div class="article-container">
-        <article class="article-card">
+        <article onclick="location.href='recipes.php'" class="article-card">
             <figure class="article-image">
                 <img src="../assets/images/parisBrest.jpeg" alt="Dessert Paris Brest"
-                />
+                    />
             </figure>
             <div class="article-content">
-                <a href="recipes.php" class="card-category">Desserts</a>
+                <p class="card-category">Desserts</p>
                 <h3 class="card-title">Paris Brest</h3>
                 <p class="card-excerpt"></p>
-            </div>    
+            </div>
         </article>    
-        <article class="article-card">
+        <article onclick="location.href='recipes.php'" class="article-card">
             <figure class="article-image">
                 <img src="../assets/images/tarteCitron.jpeg" alt="Dessert Tarte Citron Meringuée"
-                />
+                    />
             </figure>
             <div class="article-content">
-                <a href="recipes.php" class="card-category">Desserts</a>
+                <p class="card-category">Desserts</p>
                 <h3 class="card-title">Tarte au citron meringuée</h3>
                 <p class="card-excerpt"></p>
             </div>    
         </article>   
-        <article class="article-card">
+        <article onclick="location.href='recipes.php'" class="article-card">
             <figure class="article-image">
-                <img src="../assets/images/bucheNoel.jpeg" alt="Dessert Buche Noël à l'ancienne"
-                />
+            <img src="../assets/images/bucheNoel.jpeg" alt="Dessert Buche Noël à l'ancienne"
+                    />
             </figure>
             <div class="article-content">
-                <a href="recipes.php" class="card-category">Desserts</a>
+                <p class="card-category">Desserts</p>
                 <h3 class="card-title">Bûche de Noël à l'ancienne</h3>
                 <p class="card-excerpt"></p>
             </div>    
         </article>   
-        <article class="article-card">
+        <article onclick="location.href='recipes.php'" class="article-card">
             <figure class="article-image">
-                <img src="../assets/images/royalChocolat.jpeg" alt="Dessert Royal Chocolat"
-                />
+            <img src="../assets/images/royalChocolat.jpeg" alt="Dessert Royal Chocolat"
+                    />
             </figure>
             <div class="article-content">
-                <a href="recipes.php" class="card-category">Desserts</a>
+                <p class="card-category">Desserts</p>
                 <h3 class="card-title">Royal Chocolat</h3>
                 <p class="card-excerpt"></p>
             </div>    
         </article>   
-        <article class="article-card">
+        <article onclick="location.href='recipes.php'" class="article-card">
             <figure class="article-image">
-                <img src="../assets/images/parisBrest.jpeg" alt="Dessert Paris Brest"
-                />
+            <img src="../assets/images/parisBrest.jpeg" alt="Dessert Paris Brest"
+                    />
             </figure>
             <div class="article-content">
-                <a href="recipes.php" class="card-category">Desserts</a>
+                <p class="card-category">Desserts</p>
                 <h3 class="card-title">Paris Brest</h3>
                 <p class="card-excerpt"></p>
             </div>    
         </article>    
-        <article class="article-card">
+        <article onclick="location.href='recipes.php'" class="article-card">
             <figure class="article-image">
-                <img src="../assets/images/tarteCitron.jpeg" alt="Dessert Tarte Citron Meringuée"
-                />
+            <img src="../assets/images/tarteCitron.jpeg" alt="Dessert Tarte Citron Meringuée"
+                    />
             </figure>
             <div class="article-content">
-                <a href="recipes.php" class="card-category">Desserts</a>
+                <p class="card-category">Desserts</p>
                 <h3 class="card-title">Tarte au citron meringuée</h3>
                 <p class="card-excerpt"></p>
             </div>    
         </article>   
-        <article class="article-card">
+        <article onclick="location.href='recipes.php'" class="article-card">
             <figure class="article-image">
-                <img src="../assets/images/bucheNoel.jpeg" alt="Dessert Buche Noël à l'ancienne"
-                />
+            <img src="../assets/images/bucheNoel.jpeg" alt="Dessert Buche Noël à l'ancienne"
+                    />
             </figure>
             <div class="article-content">
-                <a href="recipes.php" class="card-category">Desserts</a>
+                <p class="card-category">Desserts</p>
                 <h3 class="card-title">Bûche de Noël à l'ancienne</h3>
                 <p class="card-excerpt"></p>
             </div>    
         </article>   
-        <article class="article-card">
+        <article onclick="location.href='recipes.php'" class="article-card">
             <figure class="article-image">
-                <img src="../assets/images/royalChocolat.jpeg" alt="Dessert Royal Chocolat"
-                />
+            <img src="../assets/images/royalChocolat.jpeg" alt="Dessert Royal Chocolat"
+                    />
             </figure>
             <div class="article-content">
-                <a href="recipes.php" class="card-category">Desserts</a>
+                <p class="card-category">Desserts</p>
                 <h3 class="card-title">Royal Chocolat</h3>
                 <p class="card-excerpt"></p>
             </div>    
