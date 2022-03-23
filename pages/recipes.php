@@ -40,6 +40,7 @@
                 <li>4 oeufs</li>
                 <li>50g de poudre d'amande</li>
                 <li>20cl de crème fraîche</li>
+                <li>100g de noix</li>
             </ul>
         </section>
         <section class="recipe_steps">
