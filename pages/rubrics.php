@@ -62,45 +62,45 @@
         </article>   
         <article onclick="location.href='recipes.php'" class="article-card">
             <figure class="article-image">
-            <img src="../assets/images/parisBrest.jpeg" alt="Dessert Paris Brest"
+            <img src="../assets/images/milleFeuille.jpeg" alt="Dessert Millefeuille"
                     />
             </figure>
             <div class="article-content">
                 <p class="card-category">Desserts</p>
-                <h3 class="card-title">Paris Brest</h3>
+                <h3 class="card-title">Millefeuille</h3>
                 <p class="card-excerpt"></p>
             </div>    
         </article>    
         <article onclick="location.href='recipes.php'" class="article-card">
             <figure class="article-image">
-            <img src="../assets/images/tarteCitron.jpeg" alt="Dessert Tarte Citron Meringuée"
+            <img src="../assets/images/tartesNormandeBourdaloue.jpeg" alt="Dessert Tarte Normande Bourdaloue"
                     />
             </figure>
             <div class="article-content">
                 <p class="card-category">Desserts</p>
-                <h3 class="card-title">Tarte au citron meringuée</h3>
+                <h3 class="card-title">Tartes Normande & Bourdaloue</h3>
                 <p class="card-excerpt"></p>
             </div>    
         </article>   
         <article onclick="location.href='recipes.php'" class="article-card">
             <figure class="article-image">
-            <img src="../assets/images/bucheNoel.jpeg" alt="Dessert Buche Noël à l'ancienne"
+            <img src="../assets/images/moka.jpeg" alt="Dessert Moka"
                     />
             </figure>
             <div class="article-content">
                 <p class="card-category">Desserts</p>
-                <h3 class="card-title">Bûche de Noël à l'ancienne</h3>
+                <h3 class="card-title">Moka</h3>
                 <p class="card-excerpt"></p>
             </div>    
         </article>   
         <article onclick="location.href='recipes.php'" class="article-card">
             <figure class="article-image">
-            <img src="../assets/images/royalChocolat.jpeg" alt="Dessert Royal Chocolat"
+            <img src="../assets/images/charlottePistacheFramboise.jpeg" alt="Dessert Charlotte Pistache Framboise"
                     />
             </figure>
             <div class="article-content">
                 <p class="card-category">Desserts</p>
-                <h3 class="card-title">Royal Chocolat</h3>
+                <h3 class="card-title">Charlotte Pistache Framboise</h3>
                 <p class="card-excerpt"></p>
             </div>    
         </article>   
