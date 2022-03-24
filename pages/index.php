@@ -48,11 +48,9 @@
       </article>
     </section>
   </div>
-
-
   <?php
-  include "../layouts/_footer.php";
-  ?>
+include "../layouts/_footer.php";
+?>
 </body>
 </html>
 

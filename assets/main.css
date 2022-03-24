@@ -14,8 +14,8 @@
   --big-space: 1.5rem;
   --nav-height-small: 45px;
   --nav-height-big: 54px;
-  --footer-height-small: 95px;
-  --footer-height-big: 65px;
+  --footer-height-small: 100px;
+  --footer-height-big: 70px;
 }
 
 * {
@@ -26,4 +26,11 @@
 
 body {
   background-color: #fffbf5;
+  /* height: calc(100vh - var(--nav-height-small)); */
 }
+
+/* @media screen and (min-width: 420px) {
+  body {
+    height: calc(100vh - var(--nav-height-big) - var(--footer-height-big));
+  }
+} */
