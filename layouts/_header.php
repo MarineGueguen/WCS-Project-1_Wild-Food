@@ -3,6 +3,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/nav.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/adb7a506a9.js" crossorigin="anonymous"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
@@ -13,12 +17,11 @@
     <nav class="nav-bar">
 
         <div class="logo">
-            <!-- <img src="https://i.imgur.com/iheOsmy.png" alt="logo" class="img-logo"/> -->
-            <i class="fa-solid fa-utensils img-logo"></i>
-            <div class="text-logo">
+        <a href="../pages/index.php" alt="home-page"><i class="fa-solid fa-utensils img-logo"></i>
+            
                 <a href="../pages/index.php" alt="home-page"><h1 class="blog-title">Wild food</h2></a>
            
-</div>
+
         </div>
 
         <label class="nav-label">

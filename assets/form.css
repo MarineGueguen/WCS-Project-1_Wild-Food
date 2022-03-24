@@ -16,7 +16,7 @@ form {
     padding: 3rem;
 }
 
-label {
+label, legend {
     display: block;
     padding: 0.5rem;
 }
@@ -49,4 +49,63 @@ textarea {
 
 .recipe-step2, .recipe-step3, .recipe-step4, .recipe-step5 {
     display: none;
+}
+
+.budget, .difficulty {
+    display: flex;
+}
+
+.recipe_info {
+    display: block;
+    
+}
+
+.budget input, .difficulty input {
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    display: flex;
+    align-self: center;
+}
+
+.error {
+    position: absolute;
+    top: 5rem;
+    left: 35% ;
+    z-index: 1;
+    max-width: 30%;
+    text-align: center;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: aliceblue;
+}
+
+/* USERS RECIPES PAGE*/
+
+.recipe_card {
+    border: solid 1px var(--second-color);
+    padding-bottom: 1rem;
+    margin: 1rem auto 1rem auto;
+}
+
+.recipe_title {
+    text-align: center;
+}
+
+.recipe_autor {
+    display: block;
+    text-align: center;
+    margin-top: -1.2rem;
+}
+
+.user_ingredients {
+    font-weight: lighter;
+}
+
+@media screen and (min-width: 915px) {
+    .recipe_info {
+        display: flex;
+        justify-content: space-evenly;
+    }
 }
