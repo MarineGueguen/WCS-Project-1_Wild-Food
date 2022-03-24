@@ -99,6 +99,7 @@ main{
     margin-right: var(--main-margin);
     background-color: var(--main-color);
     font-family: var(--font-text);
+    text-align: justify;
 }
 
 .recipe_steps div {
@@ -117,9 +118,9 @@ main{
 
 /* Version desktop*/
 
-@media screen and (min-width: 390px) {
+@media screen and (min-width: 915px) {
     main{
-        max-width : 40rem;
+        max-width : 50%;
         margin: auto;
     }
 
