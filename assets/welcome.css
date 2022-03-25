@@ -1,6 +1,6 @@
 .sectionContainer {
   height: calc(100vh - var(--nav-height-small));
-  max-width: 1200px;
+  width: 80%;
   margin: 0 auto;
   padding: 1rem;
   display: flex;
@@ -11,7 +11,7 @@
   height: 100%;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: repeat(auto, 1fr);
+  grid-template-rows: repeat(4, 1fr);
   gap: 1rem;
 }
 
@@ -65,10 +65,6 @@ article a:link {
     grid-template-rows: repeat(2, 1fr);
     width: 100%;
   }
-
-  .sectionContainer {
-    height: calc(100vh - var(--nav-height-big) - var(--footer-height-big));
-  }
 }
 
 @media screen and (min-width: 915px) {
@@ -101,5 +97,11 @@ article a:link {
     font-family: var(--font-title);
     font-size: var(--font-size-text-normal);
     color: var(--text-color-light);
+  }
+}
+
+@media screen and (min-width: 980px) {
+  .sectionContainer {
+    height: calc(100vh - var(--nav-height-big) - var(--footer-height-big));
   }
 }
