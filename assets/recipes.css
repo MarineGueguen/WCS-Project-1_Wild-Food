@@ -59,7 +59,7 @@ main{
 .info_list {
     display: flex;
     list-style: none;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 /* Ingredients of the recipe*/
