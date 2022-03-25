@@ -40,6 +40,7 @@ footer {
   align-self: flex-end;
   border-radius: 50px;
   border: none;
+  margin: 5px;
 }
 
 .contact-submit-button {
@@ -56,12 +57,13 @@ footer {
   position: absolute;
   display: flex;
   flex-direction: column;
-  padding: 10px;
+  /* padding: 5px; */
   bottom: var(--footer-height-small);
   left: calc((100vw - 300px) / 2);
   background-color: #fffbf5dc;
   width: 300px;
   height: 300px;
+  border: 1px solid var(--second-color);
   border-radius: 20px;
 }
 
