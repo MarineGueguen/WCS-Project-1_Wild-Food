@@ -60,6 +60,7 @@ main{
     display: flex;
     list-style: none;
     justify-content: space-evenly;
+    align-items: center;
 }
 
 /* Ingredients of the recipe*/
