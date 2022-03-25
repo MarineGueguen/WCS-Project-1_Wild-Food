@@ -18,9 +18,9 @@ body {
     font-weight: var(--weight-title);
 }
 
-form {
+.form_recipe {
     margin: auto;
-    width: 50%;
+    width: 95%;
     padding: 1.5rem;
     
 }
@@ -32,7 +32,7 @@ label, legend {
     font-size: 1.2rem;
 }
 
-input, textarea, select {
+.form_recipe input, .form_recipe textarea, .form_recipe select {
     width: 100%;
     max-width: 100%;
     font-size: var(--font-size-text-normal);
@@ -69,6 +69,11 @@ textarea {
 .recipe_info {
     display: block;
     
+}
+
+.difficulty, .budget {
+    display: inline block;
+    justify-content: center;
 }
 
 .budget input, .difficulty input {
@@ -200,5 +205,12 @@ select {
     .recipe_info {
         display: flex;
         justify-content: space-evenly;
+    }
+
+    .form_recipe {
+        margin: auto;
+        width: 50%;
+        padding: 1.5rem;
+        
     }
 }
