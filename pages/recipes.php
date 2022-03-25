@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/recipes.css">
     <link rel="stylesheet" href="/assets/main.css">
+    <link rel="stylesheet" href="/assets/form.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
     <title>Recettes</title>
@@ -27,11 +28,11 @@
         </section>
         <section>
             <div class="recipe_infos">  
-            <ul class="info_list">
-                <li>Temps de préparation : 2h30</li>
-                <li>Budget : *****</li>
-                <li>Difficulté : ***</li>
-            </ul>
+                <ul class="info_list">
+                    <li class="prepration_time_list">2h30</li>
+                    <li class="euro" class="budget">€€</li>
+                    <li ><img src='../assets/images/lv3.png' alt='lv3'  class="difficulty img"></li>
+                </ul>
             </div>
         </section>
         <section class="recipe_ingredients">
