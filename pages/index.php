@@ -22,29 +22,29 @@
         <a href="rubrics.php" >
           <img class="homePageImage" src="../assets/images/aperitif.jpeg"/>
           <h2 class="homePageTitle borderRadius">Apéritifs</h2>
-        </a>
           <p class="homePageTitleSubtitle">Le meilleur des apéritifs à partager entre amis. Verrines, toasts, amuse-gueules ou petits feuilletées, surprenez vos convives !</p>
+        </a>
       </article>
       <article>
-        <a href="#">
+        <a href="rubrics.php">
           <img class="homePageImage" src="../assets/images/entree.jpeg"/>
           <h2 class="homePageTitle borderRadius">Entrées</h2>
+          <p class="homePageTitleSubtitle">Découvrez nos recettes faciles d’entrées maison pour commencer le repas en beauté.</p>
         </a>
-        <p class="homePageTitleSubtitle">Découvrez nos recettes faciles d’entrées maison pour commencer le repas en beauté.</p>
       </article>
       <article>
-        <a href="#">
+        <a href="rubrics.php">
           <img class="homePageImage" src="../assets/images/plat.jpeg"/>
           <h2 class="homePageTitle borderRadius">Plats</h2>
+          <p class="homePageTitleSubtitle">Du repas léger au plus décadent, nos recettes de plats principaux sont variées et savoureuses !</p>
         </a>
-        <p class="homePageTitleSubtitle">Du repas léger au plus décadent, nos recettes de plats principaux sont variées et savoureuses !</p>
       </article>
       <article>
-        <a href="#">
+        <a href="rubrics.php">
           <img class="homePageImage" src="../assets/images/dessert.jpeg"/>
           <h2 class="homePageTitle borderRadius">Desserts</h2>
+          <p class="homePageTitleSubtitle">Impressionez vos invités avec l’une de nos recettes sucrées. Des plus gourmandes aux plus fines, ces pâtisseries ne feront qu’un avec votre diabète.</p>
         </a>
-        <p class="homePageTitleSubtitle">Impressionez vos invités avec l’une de nos recettes sucrées. Des plus gourmandes aux plus fines, ces pâtisseries ne feront qu’un avec votre diabète.</p>
       </article>
     </section>
   </div>
