@@ -25,6 +25,11 @@
   box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   background-color: #fffbf5;
+  min-height: 100%;
 }

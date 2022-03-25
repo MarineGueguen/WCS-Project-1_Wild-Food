@@ -98,7 +98,7 @@ $budgets = ["€", "€€", "€€€",];
         include '../layouts/_header.php';
     ?>
  <h1 class="page-title">Toi aussi, propose ta recette !</h1>
-    <form target="" method="POST" action="./users-recipes.php">
+    <form target="" method="POST" action="./users-recipes.php" class="form_recipe">
         <div class="user_name">
             <label for="user">Auteur de la recette :</label> 
             <input type="text" name="user" id="user" placeholder="Ex : Bob De Lahaute" required class="text">
