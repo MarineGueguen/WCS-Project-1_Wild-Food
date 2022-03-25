@@ -1,21 +1,151 @@
 footer {
-  background-color: aquamarine;
-  height: var(--footer-height);
-  padding: 0.5rem;
+  background-color: var(--second-color);
+  height: var(--footer-height-small);
+  padding: 10px 10px 10px 10px;
+  font-family: var(--font-text);
+  color: var(--text-color-light);
+  width: 100%;
 }
 
-.contact {
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 20px);
+  align-items: center;
+}
+
+.fb-like {
+  justify-self: end;
+  margin-top: 10px;
+  transition: opacity 0.4s;
+}
+
+.contact-open-button {
+  grid-row: 2 / 3;
+  border-radius: 30px;
+  border: none;
+  color: var(--text-color-light);
+  background-color: var(--second-color);
+  transition: color 0.4s;
+  font-size: var(--font-size-text-normal);
+  font-weight: bolder;
+  justify-self: flex-start;
+}
+
+.contact-close-button {
+  background-color: var(--second-color);
+  color: white;
+  width: 30px;
+  height: 30px;
+  align-self: flex-end;
+  border-radius: 50px;
+  border: none;
+}
+
+.contact-submit-button {
+  border-radius: 50px;
+  padding: 1px 13px;
+  border: none;
+  color: var(--text-color-light);
+  background-color: var(--second-color);
+  transition: opacity 0.4s;
+}
+
+.contact-form-container {
+  visibility: hidden;
+  position: absolute;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  padding: 10px;
+  bottom: var(--footer-height-small);
+  left: calc((100vw - 300px) / 2);
+  background-color: #fffbf5dc;
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
 }
 
-.social {
-  margin: 0.5rem 0 0 0;
+.contact-form {
   display: flex;
-  justify-content: flex-end;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  color: var(--text-color-dark);
+  width: auto;
+  height: 200px;
+  margin: 0 auto 0 auto;
+  padding: 5px;
 }
 
-.fbLogo {
-  width: 2rem;
-  height: 2rem;
+.newsletter-inscription {
+  display: flex;
+  flex-direction: column;
+  justify-self: flex-start;
+  /* justify-content: flex-start; */
+  align-items: center;
+  grid-column: 1 / -1;
+  grid-row: 3 / 5;
+}
+
+.newsletter-inscription input {
+  width: 104px;
+}
+
+.newsletter-button {
+  border-radius: 50px;
+  padding: 1px 13px;
+  border: 1px solid var(--main-color);
+  color: var(--text-color-light);
+  background-color: var(--second-color);
+  transition: opacity 0.4s;
+}
+
+@media screen and (min-width: 420px) {
+  footer {
+    height: var(--footer-height-big);
+  }
+
+  .footer-grid {
+    grid-template-rows: repeat(2, 20px);
+    gap: 5px;
+  }
+  .contact-form-container {
+    bottom: calc(var(--footer-height-big) * 2);
+  }
+  .contact-open-button {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    justify-self: end;
+  }
+  .newsletter-inscription {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    flex-direction: row;
+    gap: 5px;
+  }
+  .newsletter-inscription input {
+    width: 200px;
+  }
+}
+
+@media screen and (min-width: 915px) {
+  .fb-like:hover {
+    opacity: 0.7;
+  }
+  .newsletter-button:hover {
+    opacity: 0.5;
+    cursor: pointer;
+  }
+  .contact-open-button:hover {
+    cursor: pointer;
+    color: var(--text-color-dark);
+  }
+  .contact-close-button:hover {
+    opacity: 0.7;
+    cursor: pointer;
+  }
+  .contact-submit-button:hover {
+    opacity: 0.7;
+    cursor: pointer;
+  }
 }
