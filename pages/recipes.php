@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/assets/form.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
-    <title>Recettes</title>
+    <title>Recette du Paris-Brest</title>
 </head>
 <body>
 <?php

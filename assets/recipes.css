@@ -1,134 +1,128 @@
 :root {
-    --main-padding : 0.5rem;
-    --main-margin : 1rem;
+  --main-padding: 0.5rem;
+  --main-margin: 1rem;
 }
 
 * {
-    box-sizing: border-box;
-    margin : 0;
-    padding : 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-/* main */ 
-main{
-    border-left: solid 1px var(--second-color); 
-    border-right: solid 1px var(--second-color);
-    padding-bottom: 1rem;
+/* main */
+main {
+  border-left: solid 1px var(--second-color);
+  border-right: solid 1px var(--second-color);
+  padding-bottom: 1rem;
 }
 
 /*image*/
 
-
-.recipe_image_box{
-    display : flex;
-    align-items: center;
-    margin-top: 0;
-    height: 21rem;
+.recipe_image_box {
+  display: flex;
+  align-items: center;
+  margin-top: 0;
+  height: 21rem;
 }
 
-.recipe_image_box img { 
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 10px;
-    object-fit: cover;
-    width: 90%;
-    height: 300px;
+.recipe_image_box img {
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  width: 90%;
+  height: 300px;
 }
 
 /* Title of the recipe*/
 
-.recipe_title h1{
-    text-align: center;
-    font-size: var(--font-size-title);
-    font-family: var(--font-title);
+.recipe_title h1 {
+  text-align: center;
+  font-size: var(--font-size-title);
+  font-family: var(--font-title);
 }
 
 /* Info of the recipe*/
 
 .recipe_infos {
-    margin : var(--main-margin);
-    margin-top : 18px;
-    padding : var(--main-padding);
-    height : auto;
-    border-radius: 10px;
-    background-color: var(--main-color);
-    box-shadow :2px 2px 2px 2px rgba(0, 0, 0, 0.2);
-    font-family: var(--font-text);
+  margin: var(--main-margin);
+  margin-top: 18px;
+  padding: var(--main-padding);
+  height: auto;
+  border-radius: 10px;
+  background-color: var(--main-color);
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+  font-family: var(--font-text);
 }
 
 .info_list {
-    display: flex;
-    list-style: none;
-    justify-content: space-evenly;
-    align-items: center;
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 /* Ingredients of the recipe*/
 
-.recipe_ingredients p{
-    padding-bottom : var(--main-padding);
-    font-weight: bold;
-    padding : var(--main-padding);
-    padding-top: 0;
-    font-family: var(--font-text);
+.recipe_ingredients p {
+  padding-bottom: var(--main-padding);
+  font-weight: bold;
+  padding: var(--main-padding);
+  padding-top: 0;
+  font-family: var(--font-text);
 }
 
 .recipe_ingredients {
-    margin : var(--main-margin);
-    padding : var(--main-padding);
-    height : auto;
-    border : var(--main-color) solid 2px;
-    border-radius: 10px;
-    background-color:var(--main-color);
-    display: flex;
-    flex-direction: column;
-    font-family: var(--font-text);
-
+  margin: var(--main-margin);
+  padding: var(--main-padding);
+  height: auto;
+  border: var(--main-color) solid 2px;
+  border-radius: 10px;
+  background-color: var(--main-color);
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-text);
 }
 
-.ingredients_list{
-    padding-left: 10%;
-    column-count: 2;
+.ingredients_list {
+  padding-left: 10%;
+  column-count: 2;
 }
-
 
 /* Steps of the recipe*/
 
-.recipe_steps{
-    border-radius: 10px;
-    margin-left: var(--main-margin);
-    margin-right: var(--main-margin);
-    background-color: var(--main-color);
-    font-family: var(--font-text);
-    text-align: justify;
+.recipe_steps {
+  border-radius: 10px;
+  margin-left: var(--main-margin);
+  margin-right: var(--main-margin);
+  background-color: var(--main-color);
+  font-family: var(--font-text);
+  text-align: justify;
 }
 
 .recipe_steps div {
-    display: flex;
-    padding : var(--main-padding);
-    height : auto;
-    flex-direction: column;
-
- 
-
+  display: flex;
+  padding: var(--main-padding);
+  height: auto;
+  flex-direction: column;
 }
-.recipe_steps div p:first-child{
-    padding-bottom : var(--main-padding);
-    font-weight: bold;
+.recipe_steps div p:first-child {
+  padding-bottom: var(--main-padding);
+  font-weight: bold;
 }
 
 /* Version desktop*/
 
 @media screen and (min-width: 915px) {
-    main{
-        max-width : 50%;
-        margin: auto;
-    }
+  main {
+    max-width: 50%;
+    margin: auto;
+  }
 
-    /*image*/
-    
-    .recipe_title{
-        margin : var(--main-margin);
-        margin-top: 0;
-    }
+  /*image*/
+
+  .recipe_title {
+    margin: var(--main-margin);
+    margin-top: 0;
+  }
 }
