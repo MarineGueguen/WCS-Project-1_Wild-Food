@@ -1,6 +1,8 @@
 .sectionContainer {
   height: calc(100vh - var(--nav-height-small));
-  padding: 0.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
   display: flex;
   justify-content: center;
 }
@@ -10,7 +12,7 @@
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(auto, 1fr);
-  gap: 0.5rem;
+  gap: 1rem;
   /* padding: 0.5rem 0; */
 }
 
@@ -48,7 +50,7 @@ article a:link {
   align-items: center;
   font-family: var(--font-title);
   font-size: var(--font-size-title);
-  text-shadow: 0px 0px 3px var(--second-color);
+  text-shadow: 0px 0px 5px var(--second-color);
 }
 
 .homePageTitleSubtitle {

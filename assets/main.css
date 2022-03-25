@@ -1,6 +1,7 @@
 :root {
   --main-color: #fffbf5;
-  --second-color: #ad9b80;
+  /* --second-color: #d3c0a4; */
+  --second-color: #463f35;
   --third-color: lightblue;
   --text-color-light: #fffbf5;
   --text-color-dark: #362f24;
@@ -26,11 +27,4 @@
 
 body {
   background-color: #fffbf5;
-  /* height: calc(100vh - var(--nav-height-small)); */
 }
-
-/* @media screen and (min-width: 420px) {
-  body {
-    height: calc(100vh - var(--nav-height-big) - var(--footer-height-big));
-  }
-} */
