@@ -16,7 +16,7 @@ $bonAppetit = "<span class='bon-appetit'>Bon appétit !</span>";
         <link rel="stylesheet" href="../assets/recipes.css">
         <link href="../assets/main.css" rel="stylesheet" />
         <link rel="stylesheet" href="../assets/form.css">
-        <title>Users Recipes</title>
+        <title>Recettes des wilders</title>
     </head>
     <body>
         <?php

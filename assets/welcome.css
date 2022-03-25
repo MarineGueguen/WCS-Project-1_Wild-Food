@@ -1,6 +1,6 @@
 .sectionContainer {
   height: calc(100vh - var(--nav-height-small));
-  width: 80%;
+  width: 95%;
   margin: 0 auto;
   padding: 1rem;
   display: flex;
@@ -41,9 +41,9 @@ article a:link {
   color: var(--text-color-light);
   font-weight: var(--weight-title);
   height: 24%;
-  width: 96%;
+  width: 90%;
   top: calc(50% - 12%);
-  left: calc(50% - 48%);
+  left: calc(50% - 45%);
   display: flex;
   justify-content: center;
   align-items: center;

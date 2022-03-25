@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/main.css">
     <link rel="stylesheet" href="../assets/rubrics.css">
-    <title>Rubrics</title>
+    <title>Recettes de desserts</title>
 </head>
 
 <body>

@@ -1,36 +1,37 @@
 header {
-    color: var(--text-color-light);
-    font-size: 1.2em;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    }
+  color: var(--text-color-light);
+  font-size: 1.2em;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
 
 .menu {
-    position: absolute;
-    z-index: 100;
-    left: -5px;
-    top: -5px;
-    width: 4rem;
-    height: 4rem;
-    background: var(--second-color);
-    transition: .5s ease-in-out;
-    cursor: pointer; 
+  position: absolute;
+  z-index: 100;
+  left: -5px;
+  top: -5px;
+  width: 4rem;
+  height: 4rem;
+  background: var(--second-color);
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
 }
 
 .hamburger {
-    position: absolute;
-    top: 33px;
-    left: 30px;
-    width: 30px;
-    height: 3px;
-    background: var(--text-color-light);
-    display: block;
-    transform-origin: center;
-    transition: .5s ease-in-out;
+  position: absolute;
+  top: 33px;
+  left: 30px;
+  width: 30px;
+  height: 3px;
+  background: var(--text-color-light);
+  display: block;
+  transform-origin: center;
+  transition: 0.5s ease-in-out;
 }
-    
-.hamburger:after, .hamburger:before {
-  transition: .5s ease-in-out;
+
+.hamburger:after,
+.hamburger:before {
+  transition: 0.5s ease-in-out;
   content: "";
   position: absolute;
   display: block;
@@ -39,206 +40,199 @@ header {
   background: var(--text-color-light);
 }
 
-.hamburger:before { 
-    top: -10px; 
+.hamburger:before {
+  top: -10px;
 }
 
-.hamburger:after { 
-    bottom: -10px; 
+.hamburger:after {
+  bottom: -10px;
 }
 
-.nav-input { 
-    display: none; 
+.nav-input {
+  display: none;
 }
 
 .nav-input:checked + .menu .hamburger {
-    transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 .nav-input:checked + .menu .hamburger:after {
-    transform: rotate(90deg);
-    bottom: 0;
+  transform: rotate(90deg);
+  bottom: 0;
 }
 
 .nav-input:checked + .menu .hamburger:before {
-    transform: rotate(90deg);
-    top: 0;
+  transform: rotate(90deg);
+  top: 0;
 }
 
-.nav-input:checked + .menu + ul{ 
-    opacity: 0.95; 
-    left: 0;
+.nav-input:checked + .menu + ul {
+  opacity: 0.95;
+  left: 0;
 }
 
 .nav-ul {
-    z-index: 200;
-    opacity: 0;
-    position: absolute;
-    top: 4rem;
-    left: -15rem;
-    transition: .5s .0s ease-in-out;
-    width: auto;
-    height: 100%;
-    padding: 1rem 3rem 1rem 3rem;
-    background-color: var(--second-color);
+  z-index: 200;
+  opacity: 0;
+  position: absolute;
+  top: 4rem;
+  left: -15rem;
+  transition: 0.5s 0s ease-in-out;
+  width: auto;
+  height: 100%;
+  padding: 1rem 3rem 1rem 3rem;
+  background-color: var(--second-color);
 }
 
-.nav-li{
-    list-style-type: none; 
+.nav-li {
+  list-style-type: none;
 }
 
 .nav-link {
-    margin-bottom: 0.5em;
-    display: block;
-    color: var(--text-color-light);
-    font-family: var(--font-text);
-    font-size: 2rem;
-    text-decoration: none;
+  margin-bottom: 0.5em;
+  display: block;
+  color: var(--text-color-light);
+  font-family: var(--font-text);
+  font-size: 2rem;
+  text-decoration: none;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .nav-bar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--second-color);
-    padding: 0.8rem;
-    height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--second-color);
+  padding: 0.8rem;
+  height: 5rem;
 }
 
 .blog-title {
-    font-family: var(--font-title);
-    font-size: 2.5rem;
-    margin: auto;
-    color: var(--text-color-light);
+  font-family: var(--font-title);
+  font-size: 2.5rem;
+  margin: auto;
+  color: var(--text-color-light);
 }
 
 .logo {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1rem;
 }
 
 .img-logo {
-    font-size: 2.5rem;
-    color: var(--text-color-light);
+  font-size: 2.5rem;
+  color: var(--text-color-light);
 }
 
 .nav-form {
-    position: absolute;
-    right: 0.4rem;
-    top: 0.2rem;
+  position: absolute;
+  right: 0.4rem;
+  top: 0.2rem;
+  z-index: 10;
 }
 
 .link-form {
-    display: block;
-    width: 50px;
-    height: auto;
-    font-size: 0.8rem;
-    text-align: center;
-    color: var(--text-color-light);
-    line-height: 00.8rem;
+  display: block;
+  width: 50px;
+  height: auto;
+  font-size: 0.8rem;
+  text-align: center;
+  color: var(--text-color-light);
+  line-height: 00.8rem;
 }
 
-
 .img-form {
-    width: 40px;
-    
+  width: 40px;
 }
 
 .logo-recipe {
-    width: 50px;
-    height: 50px;
+  width: 50px;
+  height: 50px;
+  background-color: var(--main-color);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 980px) {
+  .menu {
+    visibility: hidden;
+  }
+
+  .nav-label {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .nav-ul {
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    opacity: 1;
+    gap: 1rem;
+    padding-right: 1rem;
+  }
+
+  .nav-link {
+    margin-bottom: 0;
+    font-size: 1.35rem;
+  }
+
+  .nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 5.5rem;
+  }
+
+  .logo {
+    display: flex;
+    gap: 1rem;
+    padding-left: 0.3rem;
+  }
+
+  .img-logo {
+    font-size: 2.5rem;
+    color: var(--text-color-light);
+  }
+
+  .nav-form {
+    position: absolute;
+    right: 1rem;
+    top: 6rem;
+  }
+
+  .link-form {
+    display: block;
+    width: 70px;
+    height: auto;
+    font-size: 0.8rem;
+    text-align: center;
+    color: var(--text-color-dark);
     background-color: var(--main-color);
+    opacity: 80%;
+    border-radius: 10px;
+  }
+
+  .img-form {
+    width: 50px;
+  }
+
+  .logo-recipe {
+    width: 60px;
+    height: 60px;
+    background-color: var(--second-color);
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-
-
-@media screen and (min-width: 980px) {
-   
-    .menu {
-        visibility: hidden;
-    }
-    
-    .nav-label {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-    }  
-
-    .nav-ul {
-        position: static;
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        opacity: 1;
-        gap: 1rem;
-        padding-right: 1rem;
-    }
-        
-    .nav-link {
-        margin-bottom: 0;
-        font-size: 1.35rem;
-    }
-    
-    .nav-bar {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        height: 5.5rem;
-    }
-
-    .logo {
-        display: flex;
-        gap: 1rem; 
-        padding-left: 0.3rem;   
-    }
-
-    .img-logo {
-        font-size: 2.5rem;
-        color: var(--text-color-light);
-    }
-
-    .nav-form {
-        position: absolute;
-        right: 1rem;
-        top: 6rem;
-    }
-    
-    .link-form {
-        display: block;
-        width: 70px;
-        height: auto;
-        font-size: 0.8rem;
-        text-align: center;
-        color: var(--text-color-dark);
-        background-color: var(--main-color);
-        opacity: 80%;
-        border-radius: 10px;
-    }
-    
-    .img-form {
-        width: 50px;
-        
-    }
-    
-    .logo-recipe {
-        width: 60px;
-        height: 60px;
-        background-color: var(--second-color);
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    
+  }
 }
