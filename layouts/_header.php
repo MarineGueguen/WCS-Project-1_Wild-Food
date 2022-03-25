@@ -33,11 +33,14 @@
                 <li class="nav-li"> <a href="/pages/rubrics.php"><span class="nav-link">Entrées</span></a> </li>
                 <li class="nav-li"> <a href="/pages/rubrics.php"><span class="nav-link">Plats</span></a> </li>
                 <li class="nav-li"> <a href="/pages/rubrics.php"><span class="nav-link">Desserts</span></a> </li>
-                <li class="nav-li"> <a href="/pages/form.php"><span class="nav-link">Ta recette ?</span></a> </li>
+                <li class="nav-li"> <a href="/pages/users-recipes.php"><span class="nav-link recipes-wilders">Recettes des Wilders</span></a> </li>
             </ul>
-
+            
         </label>
-        
+        <div class="nav-form">
+            <a href="/pages/form.php"><div class="logo-recipe"><img src="../assets/images/recipe.png" alt="lien pour ajouter sa recette" class="img-form"></div>
+            <span class="link-form">Ajoute ta recette !</span></a> 
+        </div>
            
 
     </nav>

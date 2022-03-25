@@ -4,27 +4,38 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: var(--font-text);
+    font-size: 100%;
+    font-size: var(----font-size-text-normal);
+    line-height: 1.5;
+}
+
 .page-title {
     text-align: center;
     padding: 2rem;
+    font-family: var(--font-title);
+    font-weight: var(--weight-title);
 }
 
 form {
     margin: auto;
     width: 50%;
-    background-color: bisque;
-    padding: 3rem;
+    padding: 1.5rem;
+    
 }
 
 label, legend {
     display: block;
     padding: 0.5rem;
+    font-family: var(--font-text);
+    font-size: 1.2rem;
 }
 
 input, textarea, select {
     width: 100%;
-    border-radius: 5px;
     max-width: 100%;
+    font-size: var(--font-size-text-normal);
 }
 
 input {
@@ -68,7 +79,61 @@ textarea {
     align-self: center;
 }
 
-.error {
+.img {
+    width: 50px;
+}
+
+.euro {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--second-color);
+}
+
+.text {
+    height: 2rem;
+    padding: 0.2rem;
+    border-radius: 0;
+    box-shadow: 0px 2px 5px 0 rgba(34, 68, 123, 0.2);
+    border: 1px solid var(--second-color);
+}
+
+textarea {
+    height: 7rem;
+    padding: 0.2rem;
+    border-radius: 0;
+    box-shadow: 0px 2px 5px 0 rgba(34, 68, 123, 0.2);
+    border: 1px solid var(--second-color);
+}
+
+select {
+    height: 2rem;
+    padding: 0.2rem;
+    border-radius: 0;
+    box-shadow: 0px 2px 5px 0 rgba(34, 68, 123, 0.2);
+    background-color: rgba(255, 255, 255, 0.959);
+    border: 1px solid var(--second-color);
+}
+
+.add-step {
+    border: none;
+    background-color: var(--main-color);
+    color: var(--second-color);
+    cursor: pointer;
+    font-size: var(--font-size-title);
+}
+
+.submit-button {
+    border-radius: 30px;
+    border: 2px solid var(--second-color);
+    color: var(--second-color);
+    background-color: var(--main-color);
+    font-size: var(--font-size-text-normal);
+    font-weight: bolder; 
+    padding: 0.4rem;
+    cursor: pointer;
+}
+
+/* .error {
     position: absolute;
     top: 5rem;
     left: 35% ;
@@ -79,18 +144,23 @@ textarea {
     border: 2px solid black;
     border-radius: 5px;
     background-color: aliceblue;
-}
+} */
 
 /* USERS RECIPES PAGE*/
 
 .recipe_card {
     border: solid 1px var(--second-color);
+    border-radius: 4px;
     padding-bottom: 1rem;
     margin: 1rem auto 1rem auto;
+    font-family: var(--font-text);
+    font-size: var(--font-size-text-normal);
 }
 
 .recipe_title {
     text-align: center;
+    font-size: var(--font-size-title);
+    font-family: var(--font-title);
 }
 
 .recipe_autor {
@@ -99,8 +169,31 @@ textarea {
     margin-top: -1.2rem;
 }
 
+.infos_list {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.recipe-time {
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    color: var(--second-color);
+    font-family: var(--font-text);
+}
+
 .user_ingredients {
     font-weight: lighter;
+}
+
+.bon-appetit {
+    display:block;
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-family: var(--font-title);
 }
 
 @media screen and (min-width: 915px) {

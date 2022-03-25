@@ -1,12 +1,12 @@
 <?php 
 
-// session_start();
-// // session_destroy();
+session_start();
+// session_destroy();
 
-// if ($_GET) {
-//     var_dump($_GET);
-//     $_SESSION['recipes'][] = ['category' => $_GET['category'], 'title' => $_GET['title'], 'image' => $_GET['image'], 'time' => $_GET['time'], 'ingredients' => $_GET['ingredients'], 'step1' => $_GET['step1'], 'step2' => $_GET['step2'], 'step3' => $_GET['step3'], 'step4' => $_GET['step4'], 'step5' => $_GET['step5'],]; 
-// }
+if ($_POST) {
+    // var_dump($_POST);
+    $_SESSION['recipes'][] = ['user' => $_POST['user'], 'category' => $_POST['category'], 'title' => $_POST['title'], 'image' => $_POST['image'], 'time' => $_POST['time'], 'difficulty' => $_POST['difficulty'], 'budget' => $_POST['budget'], 'ingredients' => $_POST['ingredients'], 'step1' => $_POST['step1'], 'step2' => $_POST['step2'], 'step3' => $_POST['step3'], 'step4' => $_POST['step4'], 'step5' => $_POST['step5'],]; 
+}
 
 
 // var_dump($_SESSION);
@@ -14,7 +14,7 @@
 <?php
 $errors = [];
 
-$category = $name = $title = $image = $time = $difficulty = $budget = $ingredients = $step1 = "";
+$category = $user = $title = $image = $time = $difficulty = $budget = $ingredients = $step1 = "";
 
 function test_input($data) {
     $data = trim($data);
@@ -24,10 +24,10 @@ function test_input($data) {
 }
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    if (empty($_POST['name']))  {
+    if (empty($_POST['user']))  {
         $errors[] = "Merci de renseigner votre nom d'utilisateur. <br>";
     } else {
-        $name = test_input($_POST["name"]);
+        $user = test_input($_POST["user"]);
     }
 
     if (empty($_POST['category'])) {
@@ -51,12 +51,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
     }
 
-    if (empty($_POST['difficulty']) || empty($_POST['budget']))  {
-        $errors[] = "Merci de renseigner toutes les informations concernant la recette. <br>";
-    } else {
-        $difficulty = test_input($_POST["difficulty"]);
-        $budget = test_input($_POST["budget"]);
-    }
+    // if (!isset($_POST['difficulty']) || !isset($_POST['budget']))  {
+    //     $errors[] = "Merci de renseigner toutes les informations concernant la recette. <br>";
+    // } else {
+    //     $difficulty = test_input($_POST["difficulty"]);
+    //     $budget = test_input($_POST["budget"]);
+    // }
 
     if (empty($_POST['time']) || empty($_POST['ingredients']) || empty($_POST['step1'])) {
         $errors[] = "Merci de renseigner toutes les informations concernant la préparation de votre recette.";
@@ -66,18 +66,25 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $step1 = test_input($_POST["step1"]);
     }
     
-    if (empty($errors)) {
-        HEADER("Location: ./users-recipes.php");
-    } else {
+    if (!empty($errors)) {
         foreach ($errors as $error) {
             echo "<div class='error'>$error</div>";
         }
+        exit();
+       // HEADER("Location: ./users-recipes.php");
+    } else {
+        
     }  
 }
+
+$categories = ["Apéritif", "Entrée", "Plat", "Dessert",];
+$difficulties = ["<img src='../assets/images/lv1.png' alt='lv1'>", "<img src='../assets/images/lv2.png' alt='lv2'>", "<img src='../assets/images/lv3.png' alt='lv3'>",];
+$budgets = ["€", "€€", "€€€",];
+
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -91,92 +98,93 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         include '../layouts/_header.php';
     ?>
  <h1 class="page-title">Toi aussi, propose ta recette !</h1>
-    <form target="" method="POST" action="">
+    <form target="" method="POST" action="./users-recipes.php">
         <div class="user_name">
-            <label for="name">Auteur de la recette :</label> 
-            <input type="text" name="name" placeholder="Ex : Bob De Lahaute">
+            <label for="user">Auteur de la recette :</label> 
+            <input type="text" name="user" id="user" placeholder="Ex : Bob De Lahaute" required class="text">
         </div>
 
         <div class="recipe-type">
-            <label for="type">Catégorie de recette :</label> 
-            <select name="category" id="category-select">
-                <option value="">--Merci de choisir une catégorie--</option>
-                <option value="appetiser">Apéritif</option>
-                <option value="entree">Entrée</option>
-                <option value="main-dish">Plat</option>
-                <option value="dessert">Dessert</option>
+            <label for="category">Catégorie de recette :</label> 
+            <select name="category" id="category" required>
+            <option value="">-- Merci de choisir une catégorie --</option>
+            <?php foreach ($categories as $category): ?>
+            <option value='<?=($category)?>'>
+                <?=$category;?>
+            </option>
+            <?php endforeach; ?>
             </select>
         </div>
-
+ 
         <div class="recipe-name">
-            <label for="name">Nom de la recette :</label> 
-            <input type="text" name="title" placeholder="Ex : gâteau au chocolat">
+            <label for="title">Nom de la recette :</label> 
+            <input type="text" name="title" id="title" placeholder="Ex : gâteau au chocolat" required class="text">
         </div>
 
         <div class="recipe-img">
-            <label for="img">Photo du plat :</label>
-            <input type="url" name="image" placeholder="Ex : http://gateau.png">
+            <label for="image">Photo du plat :</label>
+            <input type="url" name="image" id="image" placeholder="Ex : http://gateau.png" required class="text">
         </div>
         <div class="recipe-name">
             <label for="name">Temps de préparation :</label> 
-            <input type="text" name="time" placeholder="Ex : 45 minutes'">
+            <input type="text" name="time" id="time" placeholder="Ex : 45 minutes"required class="text"> 
         </div>
 
         <div class="recipe_info">
             <div class="recipe-difficulty">
                 <legend>Niveau de difficulté :</legend> 
                 <div class="difficulty">
-                    <input type="radio" id="lv1" name="lv">
-                    <label for="lv1"><img href="" alt="lv1" /></label>
-                    <input type="radio" id="lv2" name="lv">
-                    <label for="lv2"><img href="" alt="lv2" /></label>
-                    <input type="radio" id="lv3" name="lv">
-                    <label for="lv3"><img href="" alt="lv3" /></label>
+                    <input type="radio" id="difficulty" name="difficulty" value="lv1" required>
+                    <label for="difficulty"><img src='../assets/images/lv1.png' alt='lv1' class="img"></label>
+                    <input type="radio" id="difficulty" name="difficulty" value="lv2" required>
+                    <label for="difficulty"><img src='../assets/images/lv2.png' alt='lv2' class="img"></label>
+                    <input type="radio" id="difficulty" name="difficulty" value="lv3" required>
+                    <label for="difficulty"><img src='../assets/images/lv3.png' alt='lv3' class="img"></label>
                 </div>
             </div>
         
             <div class="recipe-budget">
                 <legend>Budget :</legend> 
                 <div class="budget">
-                    <input type="radio" id="euro_1" name="euro">
-                    <label for="euro_1">€</label>
-                    <input type="radio" id="euro_2" name="euro">
-                    <label for="euro_2">€€</label>
-                    <input type="radio" id="euro_3" name="euro">
-                    <label for="euro_3">€€€</label>
+                <input type="radio" id="budget" name="budget" value="€" required>
+                    <label for="budget" class="euro">€</label>
+                    <input type="radio" id="budget" name="budget" value="€€" required>
+                    <label for="budget" class="euro">€€</label>
+                    <input type="radio" id="budget" name="budget" value="€€€" required>
+                    <label for="budget" class="euro">€€€</label>
                 </div>
             </div>
         </div>
 
         <div class="recipe-ingredients">
             <label for="ingredients">Ingrédients :</label>
-            <textarea name="ingredients" placeholder="Ex : 200g de farine, 100g de sucre..."></textarea>
+            <textarea name="ingredients" id="ingredients" placeholder="Ex : 200g de farine, 100g de sucre..." required></textarea>
         </div>
         <div class="recipe-step1">
             <label for="step1">Etape 1 :</label>
-            <textarea name="step1" placeholder="Ex : mélanger la farine, le sucre et les oeufs."></textarea>
+            <textarea name="step1" id="step1" placeholder="Ex : mélanger la farine, le sucre et les oeufs." required></textarea>
         </div>
         <div class="recipe-step2">
             <label for="step2">Etape 2 :</label>
-            <textarea name="step2"></textarea>
+            <textarea name="step2" id="step2"></textarea>
         </div>
         <div class="recipe-step3">
             <label for="step3">Etape 3 :</label>
-            <textarea name="step3"></textarea>
+            <textarea name="step3" id="step3"></textarea>
         </div>
         <div class="recipe-step4">
             <label for="step4">Etape 4 :</label>
-            <textarea name="step4"></textarea>
+            <textarea name="step4" id="step4"></textarea>
         </div>
         <div class="recipe-step5">
             <label for="step5">Etape 5 :</label>
-            <textarea name="step5"></textarea>
+            <textarea name="step5" id="step5"></textarea>
         </div>
         <div>
-            <button type="button" class="add-step" onclick='doAction()'>+</button>
+            <button type="button" class="add-step" title="Ajouter une étape." onclick='doAction()'>+</button>
         </div>
         <div class="recipe-button">
-            <button type="submit" name="submit" onSubmit="return submit();">Envoyer</button>
+            <button type="submit" name="submit" class="submit-button">Envoyer</button>
         </div>
        
     </form>
