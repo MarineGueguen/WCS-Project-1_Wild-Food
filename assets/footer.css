@@ -94,7 +94,6 @@ footer {
   display: flex;
   flex-direction: column;
   justify-self: flex-start;
-  align-items: center;
   grid-column: 1 / -1;
   grid-row: 3 / 5;
 }
